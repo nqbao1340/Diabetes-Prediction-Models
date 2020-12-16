@@ -1,0 +1,26 @@
+---
+title: ''
+author: "Bao Nguyen"
+date: "10/14/2020"
+output: pdf_document
+---
+
+```{r}
+library("Hmisc")
+library(tree)
+library(boot)
+library(corrplot)
+library(plotROC)
+library(pROC)
+library(glmnet)
+library(e1071)
+library(ROCR)
+library(caret)
+
+D <- read.csv("diabetes.csv")
+str(D)
+head(D)
+dim(D)
+table(D$Outcome)
+```
+
